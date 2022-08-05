@@ -2,8 +2,14 @@ from tkinter import *
 from tkinter.ttk import Combobox
 import fancs
 from tkinter import filedialog
+from logger import logger
+
+def on_closing():
+    logger('close','')
+    window.destroy()
 
 def start():
+    global window
     window = Tk()
     window.geometry('430x380')
     window.title('Телефонный справочник')
@@ -84,5 +90,6 @@ def start():
     lbl = Label(window, text="_____________")
     lbl.grid(column=2, row=12)
 
-
+    logger('open','')
+    window.protocol("WM_DELETE_WINDOW", on_closing)
     window.mainloop()

@@ -1,4 +1,5 @@
-import controller 
+import controller
+from logger import logger
 
 def btn_imp_click():
     file = controller.filedialog.askopenfilename(initialdir="data\imp", filetypes = ((f'{controller.combo_imp.get()}',f'*.{controller.combo_imp.get()}'),("all files","*.*")))
@@ -8,3 +9,4 @@ def btn_imp_click():
 
     with open('data\spr.csv', 'a', encoding='utf-8') as file2:
         file2.write(spisok)
+        logger('exp',file)

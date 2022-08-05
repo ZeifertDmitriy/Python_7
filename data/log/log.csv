@@ -1,0 +1,6 @@
+Time,Action,Data
+_________________
+2022-08-05 22:25:32,open,
+2022-08-05 22:25:47,add,('Самсонов А.В.', '55555')
+2022-08-05 22:25:52,exp,<_io.TextIOWrapper name='D:/Учеба/Python/dz_7/data/exp/2.csv' mode='a' encoding='utf-8'>
+2022-08-05 22:25:52,close,
